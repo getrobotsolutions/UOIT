@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+    <script src="boots/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+    
+    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+
+<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+
+  <header onclick="">
+    <div class="config" onclick="FC_ContentsCall('Config')">
+        <img src="assets/config.png" height="100">
+    </div>
+    <!--<div class="img-home" onclick="location.href ='maincontents.htm'"></div>-->
+    <div class="logo">
+      <img src="assets/logo.png">
+    </div>
+
+  </header>
+  <nav></nav>
+  <section class="main-content">
+    <!--<h1 class="welcome-text">WELCOME</br>TO NOVARTIS</h1>
+    <div class="get-started">Get Started</div>-->
+
+    <div class="navigation">
+      
+      <div class="col-sm-4 navigation-box" style="" onclick="GetJoke()">
+        <img src="assets/icons/laugh.png" class="navigation-icon" width="250">
+        <h2 class="navigation-text">ROBOT JOKES</h2>
+        
+      </div>
+      
+      <div class="col-sm-4 navigation-box" style="margin: 0" onclick="FC_ContentsCall('PrizeWheel')">
+        <img src="assets/icons/network.png" class="navigation-icon" width="250">
+        <h2 class="navigation-text">OUR PARTNERS</h2>
+        
+      </div>
+      <div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('Videos')">
+        <img src="assets/icons/four-squares.png" class="navigation-icon" width="250">
+        <h2 class="navigation-text">MATCHING GAME</h2>
+      </div>
+      <div class="col-sm-4 navigation-box" style="margin-bottom: 0" onclick="FC_ContentsCall('Selfie')">
+        <img src="assets/icons/camera.png" class="navigation-icon">
+        <h2 class="navigation-text">TAKE-A-PICTURE</h2>
+      </div>
+      <div class="col-sm-4 navigation-box" style="margin: 0" onclick="FC_ContentsCall('Dance')">
+        <img src="assets/icons/dancer-with-music.png" class="navigation-icon">
+        <h2 class="navigation-text">DANCE</h2>
+      </div>
+      <div class="col-sm-4 navigation-box" style="margin-bottom: 0" onclick="FC_ContentsCall('Avatar')">
+        <img src="assets/icons/robot-5.png" class="navigation-icon">
+        <h2 class="navigation-text">AVATAR</h2>
+        
+      </div>
+      
+      <!--<div class="col-sm-4 navigation-box" style="" onclick="FC_ContentsCall('go-mobile')">
+        <img src="assets/icons/go-mobile.png" class="navigation-icon ">
+        
+      </div>-->
+       
+    </div>
+  </section>
+
+  <footer>
+    <img src="assets/footer.png" width="1080">
+  </footer>
+  <div id="dialog-overlay"></div>
+  <div id="dialog-box">
+  </div>
+  <style type="text/css">
+    nav {
+    height: 30px;
+  }
+  .main-content {
+    height: 1080px;
+    margin-top: 100px;
+    border-bottom: 10px solid #0077c9;
+}
+  </style>
+  <script type="text/javascript">
+    function GetJoke(){
+    var temp=Math.floor((Math.random() * 9) + 1);
+    PlaySpeech(jokes[temp]);
+    //alert(jokes[temp]);
+  }
+  var initialJokeTime=setTimeout(GetJoke,30000);
+
+  $(document).click(function(event) {
+      clearTimeout( initialJokeTime );
+      initialJokeTime=setTimeout(GetJoke,120000);
+  });
+  </script>
+</body>
+</html>
