@@ -46,9 +46,9 @@ function FC_ContentsCall(strContentsName, strLanguage)
             PlaySpeech(speak[6]);
             location.href = "Contents/Selfie/index.html";
             break;
-        case "Videos":
-            PlaySpeech(speak[2]);
-            location.href = "Contents/Videos/index.html";
+        case "matchMaking":
+            //PlaySpeech(speak[2]);
+            location.href = "Contents/MatchGame/index.html";
             break;
         case "PrizeWheel":
             PlaySpeech(speak[1]);
