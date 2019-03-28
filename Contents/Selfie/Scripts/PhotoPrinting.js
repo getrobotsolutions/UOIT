@@ -257,7 +257,7 @@ function SendEmail()
         data: { 
           
            'email':tempEmail,
-           'apID':'Reinhausen'
+           'apID':'UOIT'
         }
       }).done(function(response) {
         console.log('saved: ' + response); 
