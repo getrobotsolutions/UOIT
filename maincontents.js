@@ -142,20 +142,20 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
            // window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Welcome to the Reinhausen booth");//I'm here to assist you, press any button on my screen to begin");
+            window.external.PlaySpeech("");//I'm here to assist you, press any button on my screen to begin");
           
     }
 
     if(btn_info[1] == '1'){
         //window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Are you coming to our biergarten wednesday?");
+        window.external.PlaySpeech("");
         
     }
     if(btn_info[2] == '1'){
         //window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Come spin my wheel and win a prize");
+            window.external.PlaySpeech("");
     }
     if(btn_info[3] == '1'){
         //window.external.ChangeLanguage("en-us");

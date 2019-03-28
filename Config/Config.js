@@ -21,11 +21,11 @@ var VERSION = "20150213";
 //-- Main Contents로 돌아감. 
 function Home()
 {
-	location.href = "../ie.html";
+	location.href = "../maincotents.htm";
 }
 function GoHome()
 {
-	location.href = "../ie.html";
+	location.href = "../maincotents.htm";
 }
 
 
