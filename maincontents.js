@@ -142,25 +142,25 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
            // window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("");//I'm here to assist you, press any button on my screen to begin");
+            window.external.PlaySpeech("Hi, you look nice, can I take your picture?");//I'm here to assist you, press any button on my screen to begin");
           
     }
 
     if(btn_info[1] == '1'){
         //window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("");
+        window.external.PlaySpeech("Press my dance button, and let's boogie");
         
     }
     if(btn_info[2] == '1'){
         //window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("");
+            window.external.PlaySpeech("I like you, please come over and touch the buttons on my screen.");
     }
     if(btn_info[3] == '1'){
         //window.external.ChangeLanguage("en-us");
         SetVolume(1);
-       window.external.PlaySpeech("");
+       window.external.PlaySpeech("Later, let's you and I take a ride in an autonomous car.");
         
     }
     if(btn_info[4] == '1'){
